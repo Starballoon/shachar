@@ -1,4 +1,4 @@
-const TARGET = "https://dashscope.aliyuncs.com";
+const TARGET = "https://coding.dashscope.aliyuncs.com/v1";
 
 export default {
   async fetch(request, env, ctx) {
