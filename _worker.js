@@ -1,5 +1,5 @@
 // const TARGET = "https://coding.dashscope.aliyuncs.com";
-const TARGET = 'https://ark.cn-beijing.volces.com/api/coding/v3';
+const TARGET = 'https://ark.cn-beijing.volces.com/api/coding';
 
 // export default {
 //   async fetch(request, env, ctx) {
