@@ -14,7 +14,7 @@ export default {
     let targetUrl = '';
     for (const [prefix, base] of Object.entries(proxyMap)) {
       if (pathname.startsWith(prefix)) {
-        const restPath = pathname.slice(prefix.length);
+        const restPath = pathname.slice(prefix.length-1);
         targetUrl = base + restPath + search;
         break;
       }
