@@ -9,6 +9,8 @@ export default {
       '/deepseek/':   'https://api.deepseek.com',
       '/openrouter/': 'https://openrouter.ai',
       '/opencode/':   'https://opencode.ai',
+      '/aigocode/':   'https://api.aigocode.com',
+      '/packyapi/':   'https://www.packyapi.com',
     };
 
     let targetUrl = '';
