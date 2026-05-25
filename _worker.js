@@ -4,19 +4,20 @@ export default {
     const { pathname, search } = url;
 
     const proxyMap = {
-      '/volces/':     'https://ark.cn-beijing.volces.com',
-      '/dashscope/':  'https://coding.dashscope.aliyuncs.com',
-      '/deepseek/':   'https://api.deepseek.com',
+      '/volces/': 'https://ark.cn-beijing.volces.com',
+      '/dashscope/': 'https://coding.dashscope.aliyuncs.com',
+      '/deepseek/': 'https://api.deepseek.com',
       '/openrouter/': 'https://openrouter.ai',
-      '/opencode/':   'https://opencode.ai',
-      '/aigocode/':   'https://api.aigocode.com',
-      '/packyapi/':   'https://www.packyapi.com',
+      '/opencode/': 'https://opencode.ai',
+      '/aigocode/': 'https://api.aigocode.com',
+      '/packyapi/': 'https://www.packyapi.com',
+      '/chatgpt/': 'https://chatgpt.com',
     };
 
     let targetUrl = '';
     for (const [prefix, base] of Object.entries(proxyMap)) {
       if (pathname.startsWith(prefix)) {
-        const restPath = pathname.slice(prefix.length-1);
+        const restPath = pathname.slice(prefix.length - 1);
         targetUrl = base + restPath + search;
         break;
       }
@@ -53,11 +54,11 @@ export default {
 //     }
 //     if (url.pathname.startsWith('/deepseek/')) {
 //       // https://api.deepseek.com
-//       // https://api.deepseek.com/anthropic      
+//       // https://api.deepseek.com/anthropic
 //       newUrl = 'https://api.deepseek.com' + url.pathname.substring(9) + url.search;
 //     }
 //     if (url.pathname.startsWith('/openrouter/')) {
-//       // https://openrouter.ai/api/v1      
+//       // https://openrouter.ai/api/v1
 //       newUrl = 'https://openrouter.ai' + url.pathname.substring(11) + url.search;
 //     }
 //     if (url.pathname.startsWith('/opencode/')) {
